@@ -39,11 +39,12 @@ describe('ReportviewerComponent', () => {
   component.language = "en-us";
   component.width = 100;
   component.height = 100;
+  component.toolbar = "true";
   fixture.detectChanges();
 
   var reportUrl = component.buildReportUrl();
   fixture.detectChanges();
-  var safeResourceUrl = "http://rpsvr02/reportserver?/Departments/General Reports/SampleWithParameters&rs:Embed=true&rc:Parameters=collapsed&SampleStringParameter:isnull=true&SampleBooleanParameter=false&SampleDateTimeParameter=9/1/2017&SampleIntParameter=1&SampleFloatParameter=123.1234&SampleMultipleStringParameter=Parameter1&SampleMultipleStringParameter=Parameter2&rs:ParameterLanguage=en-us";
+  var safeResourceUrl = "http://rpsvr02/reportserver?/Departments/General Reports/SampleWithParameters&rs:Embed=true&rc:Parameters=collapsed&SampleStringParameter:isnull=true&SampleBooleanParameter=false&SampleDateTimeParameter=9/1/2017&SampleIntParameter=1&SampleFloatParameter=123.1234&SampleMultipleStringParameter=Parameter1&SampleMultipleStringParameter=Parameter2&rs:ParameterLanguage=en-us&rc:Toolbar=true";
   expect(reportUrl).toEqual(safeResourceUrl);
 
   });
@@ -58,22 +59,8 @@ describe('ReportviewerComponent', () => {
 
   var reportUrl = component.buildReportUrl();
   fixture.detectChanges();
-  var safeResourceUrl = "http://rpsvr02/reportserver?/Departments/General Reports/Sample&rs:Embed=true&rc:Parameters=false&rs:ParameterLanguage=en-us";
+  var safeResourceUrl = "http://rpsvr02/reportserver?/Departments/General Reports/Sample&rs:Embed=true&rc:Parameters=false&rs:ParameterLanguage=en-us&rc:Toolbar=true";
   expect(reportUrl).toEqual(safeResourceUrl);
   });
-
-  it('Throw error if src is null', () => {
-    
-  component.reportserver = null;
-  component.src = null;
-  component.showparameters = "false";
-  fixture.detectChanges();
-
-console.log(component.onError);
-
-  expect(component.onError).toEqual("Src cannot be null");
-  
-  });
-
 });
 
