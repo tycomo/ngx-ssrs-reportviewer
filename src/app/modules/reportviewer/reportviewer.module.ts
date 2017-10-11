@@ -11,4 +11,4 @@ import { ReportviewerComponent } from './reportviewer.component';
     ReportviewerComponent
   ]
 })
-export class ReportviewerModule { }
+export class SSRSReportViewerModule { }

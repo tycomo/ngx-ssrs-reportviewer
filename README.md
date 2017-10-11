@@ -1,28 +1,104 @@
-# NgxSsrsReportviewer
+Angular 2+ SQL Server Report Viewer (ngx-ssrs-reportviewer)
+===================
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
+This library was created to give users the ability to display SQL Server Reporting Services (SSRS) reports within Angular applications.  The report viewer simplifies the process of sending commands to your report server through URL requests.  For example, you can pass parameter values and modify the controls that the user has access to inside the report viewer through your own Angular components.  You can read more about using URL access of the report server [here](https://docs.microsoft.com/en-us/sql/reporting-services/url-access-ssrs).
 
-## Development server
+## Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+1. Install ngx-ssrs-reportviewer using npm:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+    ``` npm install ngx-ssrs-reportviewer --save ```
 
-## Build
+2. Add SSRSReportViewerModule into your AppModule class. An example `app.module.ts` would look like this:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+```javascript
+    
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { SSRSReportViewerModule } from 'ngx-ssrs-reportviewer';
 
-## Running unit tests
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    SSRSReportViewerModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
 
-## Running end-to-end tests
+3. Add the report viewer to your components html template. An example `app.component.html` with all the report viewer attributes would look like this: 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+```html
+    <div class="container">
+        <ssrs-reportviewer
+            [reportserver]="reportServer"
+            [src]="reportUrl"
+            [showparameters="showParameters" 
+            [parameters]="parameters" 
+            [language]="language" 
+            [width] ="width" 
+            [height]="height" 
+            [toolbar]="toolbar" >
+        </ssrs-reportviewer>
+    </div>
+```
+NOTE: Many of these attributes are optional. I will cover which attributes are required below and what each one does.
 
-## Further help
+4. Now inside your component you can initialize the report viewers attributes. Initialization of all the attributes inside `app.component.ts` would look like this:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+ 
+  reportServer: string = 'http://myreportserver/reportserver';
+  reportUrl: string = 'MyReports/SampleReport';
+  showParameters: string = "false"; 
+  parameters: any = {
+   "SampleStringParameter": null,
+   "SampleBooleanParameter" : false,
+   "SampleDateTimeParameter" : "9/1/2017",
+   "SampleIntParameter" : 1,
+   "SampleFloatParameter" : "123.1234",
+   "SampleMultipleStringParameter": ["Parameter1", "Parameter2"]
+   };
+  language: string = "en-us";
+  width: number = 100;
+  height: number = 100;
+  toolbar: string = "true";
+}
+```
+
+## Attributes
+
+| Name          | Description   | Options | Required |
+| ------------- |-------------| -----:|-----:|
+| reportserver  | The *rswebserviceurl* of your report server.  The default of most configurations looks like http://myreportserver/reportserver | N/A | Yes |
+| src      | The *pathinfo* of your report.  This is the relative name of the report in your report server.       |   N/A | Yes |
+| showparameters | Controls the display of parameters.      |  true, false, collapsed   | No |
+| toolbar | Controls the display of the report viewer toolbar.  |  true, false   | No |
+| parameters | The report parameters you are passing to the report.     |  N/A   | No |
+| language | The lanuage of culture-sensitive report parameters such as dates, times or currency.     |  [Lanuage Codes](https://msdn.microsoft.com/en-us/library/ms533052(v=vs.85).aspx)  | No |
+| width | The width of the viewer relative to its container.  Default is 100.  | 1-100  | No |
+| height | The height of the viewer relative to its container.  Default is 100.  | 1-100  | No |
+
+## Limitations
+There are some limitations with the report viewer component that should be noted. 
+
+1. Authentication.
+ Depending on the authentication you use in your application you may run into problems with permissions.  SQL Server Reporting Services uses Windows Authentication to determine access to the reports.  If you are working in a .NET/.NET Core environment you can enable Windows Authentication in your app and the users credentials will be passed to the report server.  You could also configure your application to use Impersonation to pass the necessary credentials to your report.  How you handle these limitations will depend on your own environment.  Currently you cannot securely pass credentials to the report server with URL access.
+
+ 2. Cross 
