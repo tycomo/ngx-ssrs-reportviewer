@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReportviewerComponent } from './reportviewer.component';
+import { ReportViewerComponent } from './reportviewer.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [ReportviewerComponent],
+  declarations: [ReportViewerComponent],
   exports: [
-    ReportviewerComponent
+    ReportViewerComponent
   ]
 })
 export class SSRSReportViewerModule { }

@@ -1,7 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { SSRSReportViewerModule } from './modules/reportviewer/reportviewer.module';
 import { AppComponent } from './app.component';
-import { ReportviewerComponent } from './modules/reportviewer/reportviewer.component';
+import { ReportViewerComponent } from './modules/reportviewer/reportviewer.component';
 
 
 describe('AppComponent', () => {

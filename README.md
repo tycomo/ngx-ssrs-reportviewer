@@ -40,7 +40,7 @@ export class AppModule { }
     <div class="container">
         <ssrs-reportviewer
             [reportserver]="reportServer"
-            [src]="reportUrl"
+            [reporturl]="reportUrl"
             [showparameters="showParameters" 
             [parameters]="parameters" 
             [language]="language" 
@@ -87,7 +87,7 @@ export class AppComponent {
 | Name          | Description   | Options | Required |
 | ------------- |-------------| -----:|-----:|
 | reportserver  | The *rswebserviceurl* of your report server.  The default of most configurations looks like http://myreportserver/reportserver | N/A | Yes |
-| src      | The *pathinfo* of your report.  This is the relative name of the report in your report server.       |   N/A | Yes |
+| reporturl      | The *pathinfo* of your report.  This is the relative name of the report in your report server.       |   N/A | Yes |
 | showparameters | Controls the display of parameters.      |  true, false, collapsed   | No |
 | toolbar | Controls the display of the report viewer toolbar.  |  true, false   | No |
 | parameters | The report parameters you are passing to the report.     |  N/A   | No |

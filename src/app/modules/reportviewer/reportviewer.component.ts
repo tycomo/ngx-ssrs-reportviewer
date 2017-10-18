@@ -8,7 +8,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   templateUrl: './reportviewer.component.html',
   styleUrls: ['./reportviewer.component.css']
 })
-export class ReportviewerComponent implements OnChanges {
+export class ReportViewerComponent implements OnChanges {
 
 
   @Input()
