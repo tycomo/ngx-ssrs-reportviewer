@@ -12,7 +12,7 @@ export class ReportviewerComponent implements OnChanges {
 
 
   @Input()
-  src: string;
+  reporturl: string;
   @Input()
   reportserver: string;
   @Input()
@@ -37,11 +37,11 @@ export class ReportviewerComponent implements OnChanges {
   source: SafeResourceUrl;
 
   ngOnChanges(changes: SimpleChanges) {
-    if(!this.src){
+    if(!this.reporturl){
       this.onError.emit("Src cannot be null");
     }
 
-    if ('src' in changes) {
+    if ('reporturl' in changes) {
       console.log('changes');
       this.source = this.sanitizer
       .bypassSecurityTrustResourceUrl(this.buildReportUrl());
@@ -73,13 +73,14 @@ export class ReportviewerComponent implements OnChanges {
   }
 
   public buildReportUrl() : string {
-    if (!this.src) {
+    if (!this.reporturl) {
       return;
     }
+    console.log(this.showparameters);
 
     var parameters = this.buildParameterString();
     return this.reportserver + '?/'
-      + this.src + '&rs:Embed=true'
+      + this.reporturl + '&rs:Embed=true'
       + '&rc:Parameters=' + this.showparameters
       + parameters
       + '&rs:ParameterLanguage=' + this.language + "&rc:Toolbar=" + this.toolbar;

@@ -26,7 +26,7 @@ describe('ReportviewerComponent', () => {
  it('Complex url built correctly', () => {
     
   component.reportserver = 'http://rpsvr02/reportserver';
-  component.src = 'Departments/General Reports/SampleWithParameters';
+  component.reporturl = 'Departments/General Reports/SampleWithParameters';
   component.showparameters = "collapsed"; //true, false, collapsed
   component.parameters = {
    "SampleStringParameter": null,
@@ -53,7 +53,7 @@ describe('ReportviewerComponent', () => {
    it('Simple url built correctly (no parameters)', () => {
     
   component.reportserver = 'http://rpsvr02/reportserver';
-  component.src = 'Departments/General Reports/Sample';
+  component.reporturl = 'Departments/General Reports/Sample';
   component.showparameters = "false";
   fixture.detectChanges();
 

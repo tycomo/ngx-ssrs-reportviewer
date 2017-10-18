@@ -2,7 +2,7 @@
   "name": "ngx-ssrs-reportviewer",
   "version": "1.0.0",
   "author": "Tyler Como",
-  "description": "Angular2+ component for rendering SSRS reports",
+  "description": "Angular 2+ component for rendering SSRS reports",
   "license": "MIT",
   "repository": {
     "type": "git",
