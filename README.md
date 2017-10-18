@@ -108,7 +108,7 @@ There are some limitations with the report viewer component that should be noted
 Here are some simple examples.
 
 showparameters set to "true"
-<img src="images/AllParametersShowParameters/PNG">
+<img src="images/AllParametersShowParameters.PNG">
 
 showparameters set to "false"
-<img src="images/AllParametersShowParameters/PNG">
+<img src="images/AllParametersShowParameters.PNG">
