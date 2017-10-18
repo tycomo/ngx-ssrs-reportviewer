@@ -1,5 +1,5 @@
 import { TestBed, async } from '@angular/core/testing';
-import { ReportviewerModule } from './modules/reportviewer/reportviewer.module';
+import { SSRSReportViewerModule } from './modules/reportviewer/reportviewer.module';
 import { AppComponent } from './app.component';
 import { ReportviewerComponent } from './modules/reportviewer/reportviewer.component';
 
@@ -8,7 +8,7 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        ReportviewerModule
+        SSRSReportViewerModule
       ],
       declarations: [
         AppComponent

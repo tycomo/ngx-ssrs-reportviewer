@@ -25,6 +25,8 @@ export class ReportviewerComponent implements OnChanges {
   width?: number = 100;
   @Input()
   height?: number = 100;
+  @Input()
+  toolbar?: string = "true";
 
 
   @Output('error') onError = new EventEmitter<any>();
@@ -80,7 +82,7 @@ export class ReportviewerComponent implements OnChanges {
       + this.src + '&rs:Embed=true'
       + '&rc:Parameters=' + this.showparameters
       + parameters
-      + '&rs:ParameterLanguage=' + this.language;
+      + '&rs:ParameterLanguage=' + this.language + "&rc:Toolbar=" + this.toolbar;
 
      
   }
