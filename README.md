@@ -101,4 +101,5 @@ There are some limitations with the report viewer component that should be noted
 1. Authentication.
  Depending on the authentication you use in your application you may run into problems with permissions.  SQL Server Reporting Services uses Windows Authentication to determine access to the reports.  If you are working in a .NET/.NET Core environment you can enable Windows Authentication in your app and the users credentials will be passed to the report server.  You could also configure your application to use Impersonation to pass the necessary credentials to your report.  How you handle these limitations will depend on your own environment.  Currently you cannot securely pass credentials to the report server with URL access.
 
- 2. Cross 
+ 2. Preventing Mixed Content
+  The report viewer uses iframes so if your reportserver is HTTP and you are trying to render it in an HTTPS application you will run into issues.
