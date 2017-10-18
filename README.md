@@ -111,4 +111,4 @@ showparameters set to "true"
 <img src="images/AllParametersShowParameters.PNG">
 
 showparameters set to "false"
-<img src="images/AllParametersShowParameters.PNG">
+<img src="images/AllParametersHideParameters.PNG">
