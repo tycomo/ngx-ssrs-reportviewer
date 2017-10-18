@@ -66,7 +66,7 @@ export class AppComponent {
  
   reportServer: string = 'http://myreportserver/reportserver';
   reportUrl: string = 'MyReports/SampleReport';
-  showParameters: string = "false"; 
+  showParameters: string = "true"; 
   parameters: any = {
    "SampleStringParameter": null,
    "SampleBooleanParameter" : false,

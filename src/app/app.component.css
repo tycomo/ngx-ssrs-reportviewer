@@ -18,3 +18,7 @@
     width: 100%;
   }
 
+.report-container {
+    height: 500px;
+    margin: 1em;
+}

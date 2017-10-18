@@ -9,7 +9,7 @@ export class AppComponent {
  
   reportServer: string = 'http://rpsvr02/reportserver';
   reportUrl: string = 'Departments/General Reports/SampleWithParameters';
-  showParameters: string = "collapsed"; //true, false, collapsed
+  showParameters: string = "true"; //true, false, collapsed
   parameters: any = {
    "SampleStringParameter": null,
    "SampleBooleanParameter" : false,
@@ -22,6 +22,8 @@ export class AppComponent {
   width: number = 100;
   height: number = 100;
   toolbar: string = "true";
+
+  
 /*
   reportServer: string = 'http://rpsvr02/reportserver';
   reportUrl: string = 'Departments/General Reports/Sample';
