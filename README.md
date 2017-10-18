@@ -105,10 +105,13 @@ There are some limitations with the report viewer component that should be noted
   The report viewer uses iframes so if your reportserver is HTTP and you are trying to render it in an HTTPS application you will run into issues.
 
 ## Simple Examples
-Here are some simple examples.
+Here are some simple examples of the report viewer.
 
 showparameters set to "true"
 <img src="images/AllParametersShowParameters.PNG">
 
 showparameters set to "false"
 <img src="images/AllParametersHideParameters.PNG">
+
+toolbar set to "false" with a width and height of 50
+<img src="images/AllParametersToolBarFalse50.PNG">

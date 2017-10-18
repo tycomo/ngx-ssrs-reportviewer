@@ -42,7 +42,6 @@ export class ReportViewerComponent implements OnChanges {
     }
 
     if ('reporturl' in changes) {
-      console.log('changes');
       this.source = this.sanitizer
       .bypassSecurityTrustResourceUrl(this.buildReportUrl());
     }
@@ -76,8 +75,6 @@ export class ReportViewerComponent implements OnChanges {
     if (!this.reporturl) {
       return;
     }
-    console.log(this.showparameters);
-
     var parameters = this.buildParameterString();
     return this.reportserver + '?/'
       + this.reporturl + '&rs:Embed=true'
