@@ -117,3 +117,6 @@ showparameters set to "false"
 
 toolbar set to "false" with a width and height of 50
 <img src="images/AllParametersToolBarFalse50.PNG">
+
+## Bugs
+If you find this package helpful throw a star my way and please report any bugs you encounter.
