@@ -1,15 +1,14 @@
-import {
-  Component, Input, Output, ElementRef, EventEmitter, OnChanges, SimpleChanges
-} from '@angular/core';
+import { Component, OnChanges, Input, Output, EventEmitter, SimpleChanges  } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'ssrs-reportviewer',
-  templateUrl: './reportviewer.component.html',
-  styleUrls: ['./reportviewer.component.css']
+  template: `
+    <iframe [src]="source" class="ssrs-reportviewer" [style.width.%]="width" [style.height.%]="height" scrolling="no"> 
+  `,
+  styles: []
 })
-export class ReportViewerComponent implements OnChanges {
-
+export class ReportviewerComponent implements OnChanges {
 
   @Input()
   reporturl: string;
@@ -28,10 +27,8 @@ export class ReportViewerComponent implements OnChanges {
   @Input()
   toolbar?: string = "true";
 
-
   @Output('error') onError = new EventEmitter<any>();
-  constructor(private sanitizer: DomSanitizer) {
-  }
+  constructor(private sanitizer: DomSanitizer) { }
 
 
   source: SafeResourceUrl;
@@ -80,8 +77,6 @@ export class ReportViewerComponent implements OnChanges {
       + this.reporturl + '&rs:Embed=true'
       + '&rc:Parameters=' + this.showparameters
       + parameters
-      + '&rs:ParameterLanguage=' + this.language + "&rc:Toolbar=" + this.toolbar;
-
-     
+      + '&rs:ParameterLanguage=' + this.language + "&rc:Toolbar=" + this.toolbar; 
   }
 }

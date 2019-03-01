@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SSRSReportViewerModule } from './modules/reportviewer/reportviewer.module';
+import { ReportviewerModule } from 'reportviewer';
+
 
 @NgModule({
   declarations: [
@@ -10,9 +12,11 @@ import { SSRSReportViewerModule } from './modules/reportviewer/reportviewer.modu
   ],
   imports: [
     BrowserModule,
-    SSRSReportViewerModule
+    AppRoutingModule,
+    ReportviewerModule
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

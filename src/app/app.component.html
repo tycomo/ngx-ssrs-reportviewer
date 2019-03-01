@@ -1,22 +1,6 @@
-<div mdl class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
-    <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">ngx-ssrs-reportviewer</span>
-        </div>
-    </header>
-    <main class="mdl-layout__content">
-        <div class="page-content">
-            <div *ngIf="error" class="error mb">
-                {{ error.message | json }}
-            </div>
-            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title">
-                        <h4>Angular 2+ SSRS Reportviewer</h4>
-                </div>
-                <div class="report-container">
-                      <ssrs-reportviewer [reportserver]="reportServer" [reporturl]="reportUrl" [showparameters]="showParameters" [parameters]="parameters" [language]="language" [width]="width" [height]="height" [toolbar]="toolbar" ></ssrs-reportviewer>
-                </div>
-            </div>
-        </div>
-    </main>
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <ssrs-reportviewer [reportserver]="reportServer" [reporturl]="reportUrl" [showparameters]="showParameters" [parameters]="parameters" [language]="language" [width]="width" [height]="height" [toolbar]="toolbar" ></ssrs-reportviewer>
 </div>
+
+<router-outlet></router-outlet>
