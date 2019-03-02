@@ -1,16 +1,17 @@
 import { NgModule, Injector } from '@angular/core';
-import { ReportviewerComponent } from './reportviewer.component';
+import { ReportViewerComponent } from './reportviewer.component';
 import { createCustomElement } from '@angular/elements';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [ReportviewerComponent],
+  declarations: [ReportViewerComponent],
   imports: [CommonModule],
-  exports: [ReportviewerComponent]
+  exports: [ReportViewerComponent],
+  entryComponents: [ReportViewerComponent]
 })
-export class ReportviewerModule {
+export class ReportViewerModule {
   constructor(private injector: Injector) {
-    const reportviewerElement = createCustomElement(ReportviewerComponent, { injector });
+    const reportviewerElement = createCustomElement(ReportViewerComponent, { injector });
     customElements.define('ssrs-reportviewer', reportviewerElement);
   }
  }

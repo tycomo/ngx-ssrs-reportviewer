@@ -1,14 +1,37 @@
-import { Component, OnChanges, Input, Output, EventEmitter, SimpleChanges  } from '@angular/core';
+import { Component, OnChanges, Input, Output, EventEmitter, SimpleChanges, ViewEncapsulation  } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'ssrs-reportviewer',
   template: `
-    <iframe [src]="source" class="ssrs-reportviewer" [style.width.%]="width" [style.height.%]="height" scrolling="no"> 
+  <div class="iframe-container">
+    <iframe [src]="source" scrolling="no"></iframe>
+  </div>
   `,
-  styles: []
+  styles: [`
+  .iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+  }
+  
+  .iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
+  
+  /* 4x3 Aspect Ratio */
+  .iframe-container-4x3 {
+    padding-top: 75%;
+  }
+  `],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
-export class ReportviewerComponent implements OnChanges {
+export class ReportViewerComponent implements OnChanges {
 
   @Input()
   reporturl: string;

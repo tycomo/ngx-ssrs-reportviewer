@@ -3,7 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReportviewerModule } from 'reportviewer';
+import { ReportViewerModule } from 'reportviewer';
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { ReportviewerModule } from 'reportviewer';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReportviewerModule
+    ReportViewerModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

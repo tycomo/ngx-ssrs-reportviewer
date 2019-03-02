@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  reportServer: string = 'http://reportserver/reportserver';
-  reportUrl: string = 'Departments/General Reports/SampleWithParameters';
+  reportServer: string = 'http://ssrs-testserver.westus2.cloudapp.azure.com/reportserver';
+  reportUrl: string = 'SampleWithParameters';
   showParameters: string = "false"; //true, false, collapsed
   parameters: any = {
     "SampleStringParameter": "String",
