@@ -4,7 +4,9 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'ssrs-reportviewer',
   template: `
-  <p>does this work</p>
+  <div class="iframe-container">
+    <iframe [src]="source" scrolling="no"></iframe>
+  </div>
   `,
   styles: [`
   .iframe-container {
@@ -26,7 +28,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   .iframe-container-4x3 {
     padding-top: 75%;
   }
-  `]
+  `],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class ReportViewerComponent implements OnChanges {
 

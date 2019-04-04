@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [ReportViewerComponent],
   imports: [CommonModule],
-  exports: [ReportViewerComponent],
   entryComponents: [ReportViewerComponent]
 })
 export class ReportViewerModule {

@@ -1,6 +1,6 @@
 {
   "name": "ngx-ssrs-reportviewer",
-  "version": "2.0.3", 
+  "version": "2.0.6", 
   "author": "Tyler Como",
   "description": "Angular component for rendering SSRS reports",
   "homepage": "https://github.com/tycomo/ngx-ssrs-reportviewer",
