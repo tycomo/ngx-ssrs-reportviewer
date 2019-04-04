@@ -146,6 +146,11 @@
           "options": {
             "tsConfig": "projects/reportviewer/tsconfig.lib.json",
             "project": "projects/reportviewer/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/reportviewer/ng-package.prod.json"
+            }
           }
         },
         "test": {

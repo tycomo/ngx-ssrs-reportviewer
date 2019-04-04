@@ -1,6 +1,12 @@
 {
-  "name": "ngx-ssrs-reportviewer",
-  "version": "0.0.0",
+  "name": "ngx-ssrs-reportviewer-workspace",
+  "version": "1.0.0",
+  "author": "Tyler Como",
+  "homepage": "https://github.com/tycomo/ngx-ssrs-reportviewer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tycomo/ngx-ssrs-reportviewer"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,9 +14,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "lib:build": "ng run reportviewer:build",
-    "lib:build:prod": "ng run reportviewer:production",
-    "lib:test": "ng run made-with-love:test",
-    "lib:lint": "ng run made-with-love:lint",
+    "lib:build:prod": "ng run reportviewer:build:production",
+    "lib:test": "ng run reportviewer:test",
+    "lib:lint": "ng run reportviewer:lint",
     "schematics:build": "tsc -p projects/schematics/tsconfig.json",
     "schematics:copy": "npm run schematics:build && webpack",
     "build-package": "npm run lib:build:prod && npm run schematics:copy"
@@ -58,6 +64,7 @@
     "tslint": "~5.11.0",
     "typescript": "~3.2.2",
     "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
     "webpack-node-externals": "^1.7.2"
   }
 }
