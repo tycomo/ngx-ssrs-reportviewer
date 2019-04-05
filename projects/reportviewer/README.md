@@ -114,5 +114,11 @@ There are some limitations with the report viewer component that should be noted
 ## Simple Examples
 Here are some simple examples of the report viewer.
 
+showparameters set to "true"
+<img src="../../images/toolbar_true.PNG">
+
+showparameters set to "false"
+<img src="../../images/toolbar_false.PNG">
+
 ## Bugs
 If you find this package helpful throw a star my way and please report any bugs you encounter.
