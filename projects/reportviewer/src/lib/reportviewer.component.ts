@@ -5,7 +5,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   selector: 'ssrs-reportviewer',
   template: `
   <div class="iframe-container">
-    <iframe [src]="source" scrolling="no"></iframe>
+    <iframe [src]="source" scrolling="no" sandbox="allow-top-navigation"></iframe>
   </div>
   `,
   styles: [`
@@ -14,7 +14,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
     padding-top: 56.25%;
     position: relative;
   }
-  
+
   .iframe-container iframe {
      border: 0;
      height: 100%;
@@ -23,7 +23,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
      top: 0;
      width: 100%;
   }
-  
+
   /* 4x3 Aspect Ratio */
   .iframe-container-4x3 {
     padding-top: 75%;
@@ -100,6 +100,6 @@ export class ReportViewerComponent implements OnChanges {
       + this.reporturl + '&rs:Embed=true'
       + '&rc:Parameters=' + this.showparameters
       + parameters
-      + '&rs:ParameterLanguage=' + this.language + "&rc:Toolbar=" + this.toolbar; 
+      + '&rs:ParameterLanguage=' + this.language + "&rc:Toolbar=" + this.toolbar;
   }
 }
