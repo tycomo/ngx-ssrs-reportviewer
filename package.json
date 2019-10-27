@@ -1,11 +1,11 @@
 {
-  "name": "ngx-ssrs-reportviewer-workspace",
+  "name": "ngx-ssrs-reportviewer",
   "version": "1.0.0",
-  "author": "Tyler Como",
-  "homepage": "https://github.com/tycomo/ngx-ssrs-reportviewer",
+  "author": "Yitzchok Neuhaus",
+  "homepage": "https://github.com/yitzchokneuhaus1/ngx-ssrs-reportviewer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tycomo/ngx-ssrs-reportviewer"
+    "url": "https://github.com/yitzchokneuhaus1/ngx-ssrs-reportviewer"
   },
   "scripts": {
     "ng": "ng",
