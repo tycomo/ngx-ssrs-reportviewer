@@ -1,6 +1,6 @@
 {
-  "name": "ngx-ssrs-reportviewer",
-  "version": "1.0.0",
+  "name": "ngx-ssrs-reportviewer-hcm",
+  "version": "1.0.4",
   "author": "Yitzchok Neuhaus",
   "homepage": "https://github.com/yitzchokneuhaus1/ngx-ssrs-reportviewer",
   "repository": {
@@ -21,7 +21,7 @@
     "schematics:copy": "npm run schematics:build && webpack",
     "build-package": "npm run lib:build:prod && npm run schematics:copy"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
@@ -35,6 +35,7 @@
     "@webcomponents/custom-elements": "~1.2.2",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
+    "ngx-ssrs-reportviewer": "github:yitzchokneuhaus1/ngx-ssrs-reportviewer",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

@@ -1,9 +1,9 @@
 {
-  "name": "ngx-ssrs-reportviewer",
-  "version": "2.0.7", 
-  "author": "Tyler Como",
+  "name": "ngx-ssrs-reportviewer-hcm",
+  "version": "1.0.4", 
+  "author": "Yitzchok Neuhaus",
   "description": "Angular component for rendering SSRS reports",
-  "homepage": "https://github.com/tycomo/ngx-ssrs-reportviewer",
+  "homepage": "https://github.com/yitzchokneuhaus1/ngx-ssrs-reportviewer",
   "license": "MIT",
   "keywords": [
     "Angular",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tycomo/ngx-ssrs-reportviewer"
+    "url": "https://github.com/yitzchokneuhaus1/ngx-ssrs-reportviewer"
   },
   "schematics": "./schematics/collection.json",
   "peerDependencies": {
