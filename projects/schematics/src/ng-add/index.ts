@@ -14,7 +14,7 @@ import { Schema } from './schema';
 function addPackageJsonDependencies(): Rule {
   return (host: Tree, context: SchematicContext) => {
     const dependencies: NodeDependency[] = [
-      { type: NodeDependencyType.Default, version: '^7.2.0', name: '@angular/elements' },
+      { type: NodeDependencyType.Default, version: '^8.2.0', name: '@angular/elements' },
       { type: NodeDependencyType.Default, version: '~1.2.2', name: '@webcomponents/custom-elements' },
       { type: NodeDependencyType.Default, version: '^2.0.0', name: 'ngx-ssrs-reportviewer' }
     ];
