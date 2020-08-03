@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { ReportViewerModule } from 'reportviewer';
 
@@ -12,7 +12,6 @@ import { ReportViewerModule } from 'reportviewer';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ReportViewerModule
   ],
   providers: [],
