@@ -135,9 +135,9 @@
       }
     },
     "reportviewer": {
+      "projectType": "library",
       "root": "projects/reportviewer",
       "sourceRoot": "projects/reportviewer/src",
-      "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
@@ -148,7 +148,7 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/reportviewer/ng-package.prod.json"
+              "tsConfig": "projects/reportviewer/tsconfig.lib.prod.json"
             }
           }
         },

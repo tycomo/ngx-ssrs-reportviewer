@@ -23,7 +23,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/schematics": "^10.0.5",
     "@angular/animations": "^10.0.7",
     "@angular/common": "^10.0.7",
     "@angular/compiler": "^10.0.7",
@@ -37,6 +36,7 @@
     "bootstrap": "^4.5.0",
     "core-js": "^3.6.5",
     "rxjs": "~6.6.2",
+    "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {

@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 export class ReportViewerModule {
   constructor(private injector: Injector) {
     const reportviewerElement = createCustomElement(ReportViewerComponent, { injector });
-    customElements.define('ssrs-reportviewer', reportviewerElement);
+    if(!customElements.get('ssrs-reportviewer')){
+      customElements.define('ssrs-reportviewer', reportviewerElement);
+    }
   }
  }

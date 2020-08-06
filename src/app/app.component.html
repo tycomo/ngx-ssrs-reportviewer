@@ -10,23 +10,19 @@
 </header>
 
 <main role="main">
-  <section class="jumbotron text-center">
-    <div class="container">
-      <div class="album py-5 bg-light">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="card mb-12 shadow-sm">
-                  <div class="card-body">
-                      <ssrs-reportviewer [reportserver]="reportServer" [reporturl]="reportUrl" [showparameters]="showParameters" [parameters]="parameters" [language]="language" [width]="width" [height]="height" [toolbar]="toolbar" ></ssrs-reportviewer>
-                  </div>
-                </div>
+    <div class="container py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-12 shadow-sm">
+              <div class="card-body">
+                  <ssrs-reportviewer [reportserver]="reportServer" [reporturl]="reportUrl" [showparameters]="showParameters" [parameters]="parameters" [language]="language" [width]="width" [height]="height" [toolbar]="toolbar"></ssrs-reportviewer>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
-  </section>
 </main>
 
 
