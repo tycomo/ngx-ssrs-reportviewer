@@ -22,3 +22,4 @@ export class AppComponent {
   height: number = 50;
   toolbar: string = "false";
 }
+
