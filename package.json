@@ -7,9 +7,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
     "lib:build": "ng run reportviewer:build",
-    "lib:build:prod": "ng run reportviewer:build:production"
+    "lib:build:prod": "ng run reportviewer:build:production",
+    "lib:test": "ng run reportviewer:test",
+    "lib:lint": "ng run reportviewer:lint",
+    "schematics:build": "tsc -p projects/schematics/tsconfig.json",
+    "schematics:copy": "npm run schematics:build && webpack",
+    "build-package": "npm run lib:build:prod && npm run schematics:copy"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +27,7 @@
     "@angular/router": "~10.0.6",
     "bootstrap": "^4.5.2",
     "rxjs": "~6.5.5",
+    "schematics-utilities": "^2.0.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
@@ -31,9 +36,9 @@
     "@angular-devkit/build-ng-packagr": "~0.1000.5",
     "@angular/cli": "~10.0.5",
     "@angular/compiler-cli": "~10.0.6",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
@@ -46,6 +51,9 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "typescript": "~3.9.5",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.0"
   }
 }
