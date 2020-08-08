@@ -1,10 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ReportViewerModule } from 'reportviewer';
-
 
 @NgModule({
   declarations: [
@@ -15,7 +13,6 @@ import { ReportViewerModule } from 'reportviewer';
     ReportViewerModule
   ],
   providers: [],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
