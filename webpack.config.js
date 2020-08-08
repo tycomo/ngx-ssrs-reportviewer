@@ -22,16 +22,5 @@ module.exports = {
           { from: 'projects/schematics/src/collection.json', to: 'dest', toType: 'file' },
         ],
       }),
-
-    // new CopyWebpackPlugin(
-    //   [
-    //     {
-    //       from: 'projects/schematics/src/collection.json',
-    //       to: '../collection.json',
-    //       toType: 'file'
-    //     }
-    //   ],
-    //   {}
-    // )
   ]
 };
