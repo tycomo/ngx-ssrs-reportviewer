@@ -19,7 +19,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
         patterns: [
-          { from: 'projects/schematics/src/collection.json', to: 'dest', toType: 'file' },
+          { from: 'projects/schematics/src/collection.json', to: '../collection.json', toType: 'file' },
         ],
       }),
   ]
