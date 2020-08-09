@@ -1,14 +1,31 @@
-Angular SQL Server Report Viewer (ngx-ssrs-reportviewer)
-===================
-[![npm package](https://badge.fury.io/js/ngx-ssrs-reportviewer.svg)](https://www.npmjs.com/package/ngx-ssrs-reportviewer)
-[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+<p align="center">
+  <img src="images/ssrslogo.png" alt="ngx-ssrs-reportviewer Logo" width="200">
+</p>
+
+<h1 align="center">Angular SQL Server Report Viewer (ngx-ssrs-reportviewer)</h1>
+
+<p align="center">
+<a href="https://www.npmjs.com/package/ngx-ssrs-reportviewer"><img src="https://img.shields.io/npm/v/ngx-ssrs-reportviewer.svg?colorB=cb3837" alt="npm"></a>
+<a href="https://www.npmjs.com/package/ngx-ssrs-reportviewer"><img src="https://img.shields.io/npm/dt/ngx-ssrs-reportviewer?color=blue" alt="Downloads"></a>
+<a href="https://github.com/tycomo/ngx-ssrs-reportviewer/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
+</p>
+
+
+<p align="center">
+  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-installation">Installation</a> ·
+  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-usage">Usage</a> ·
+  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-attributes">Attributes</a> ·
+  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-examples">Examples</a> ·
+  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-limitations">Limitations</a>
+</p>
+
+## ℹ️️ Description
 
 This library was created to give users the ability to display SQL Server Reporting Services (SSRS) reports within Angular applications.  The report viewer simplifies the process of sending commands to your report server through URL requests.  For example, you can pass parameter values and modify the controls that the user has access to inside the report viewer through your own Angular components.  You can read more about using URL access of the report server [here](https://docs.microsoft.com/en-us/sql/reporting-services/url-access-ssrs).
 
-## Usage
+## 🔧 Installation
 
-
-1. Install ngx-ssrs-reportviewer using npm:
+Install ngx-ssrs-reportviewer using npm:
 
     ``` npm install ngx-ssrs-reportviewer --save ```
 
@@ -16,7 +33,9 @@ This library was created to give users the ability to display SQL Server Reporti
 
     ```ng add ngx-ssrs-reportviewer```
 
-2. Add ReportViewerModule and CUSTOM_ELEMENTS_SCHEMA into your AppModule class. An example `app.module.ts` would look like this:
+## 👨🏻‍🏫 Usage
+
+1. Add ReportViewerModule and CUSTOM_ELEMENTS_SCHEMA into your AppModule class. An example `app.module.ts` would look like this:
 
 ```javascript
     
@@ -41,7 +60,7 @@ export class AppModule { }
 
 ```
 
-3. Add the report viewer to your components html template. An example `app.component.html` with all the report viewer attributes would look like this: 
+2. Add the report viewer to your components html template. An example `app.component.html` with all the report viewer attributes could look as follows: 
 
 ```html
     <div class="container">
@@ -59,7 +78,7 @@ export class AppModule { }
 ```
 NOTE: Many of these attributes are optional. I will cover which attributes are required below and what each one does.
 
-4. Now inside your component you can initialize the report viewers attributes. Initialization of all the attributes inside `app.component.ts` would look like this:
+4. Now inside your component the report viewer attributes specified in the ssrs-reportviewer component can be initialized. Initialization of all the attributes inside `app.component.ts` would look like this:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -77,7 +96,7 @@ export class AppComponent {
   parameters: any = {
    "SampleStringParameter": null,
    "SampleBooleanParameter" : false,
-   "SampleDateTimeParameter" : "9/1/2017",
+   "SampleDateTimeParameter" : "11/1/2020",
    "SampleIntParameter" : 1,
    "SampleFloatParameter" : "123.1234",
    "SampleMultipleStringParameter": ["Parameter1", "Parameter2"]
@@ -89,7 +108,7 @@ export class AppComponent {
 }
 ```
 
-## Attributes
+## 📝 Attributes
 
 | Name          | Description   | Options | Required |
 | ------------- |-------------| -----:|-----:|
@@ -102,7 +121,7 @@ export class AppComponent {
 | width | The width of the viewer relative to its container.  Default is 100.  | 1-100  | No |
 | height | The height of the viewer relative to its container.  Default is 100.  | 1-100  | No |
 
-## Limitations
+## ❗ Limitations
 There are some limitations with the report viewer component that should be noted. 
 
 1. Authentication.
@@ -111,7 +130,7 @@ There are some limitations with the report viewer component that should be noted
  2. Preventing Mixed Content
   The report viewer uses iframes so if your reportserver is HTTP and you are trying to render it in an HTTPS application you will run into issues.
 
-## Simple Examples
+## 🔢 Simple Examples
 Here are some simple examples of the report viewer.
 
 showparameters set to "true"
@@ -120,5 +139,5 @@ showparameters set to "true"
 showparameters set to "false"
 <img src="images/toolbar_false.PNG">
 
-## Bugs
+## 🐞 Bugs
 If you find this package helpful throw a star my way and please report any bugs you encounter.

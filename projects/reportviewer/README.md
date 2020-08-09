@@ -1,7 +1,14 @@
-Angular SQL Server Report Viewer (ngx-ssrs-reportviewer)
-===================
+<p align="center">
+  <img src="images/ssrslogo.png" alt="ngx-ssrs-reportviewer Logo">
+</p>
+
+<h1 align="center">Angular SQL Server Report Viewer (ngx-ssrs-reportviewer)</h1>
+
+<p align="center">
 [![npm package](https://badge.fury.io/js/ngx-ssrs-reportviewer.svg)](https://www.npmjs.com/package/ngx-ssrs-reportviewer)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+</p>
+
 
 This library was created to give users the ability to display SQL Server Reporting Services (SSRS) reports within Angular applications.  The report viewer simplifies the process of sending commands to your report server through URL requests.  For example, you can pass parameter values and modify the controls that the user has access to inside the report viewer through your own Angular components.  You can read more about using URL access of the report server [here](https://docs.microsoft.com/en-us/sql/reporting-services/url-access-ssrs).
 
