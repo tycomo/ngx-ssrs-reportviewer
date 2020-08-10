@@ -121,6 +121,15 @@ export class AppComponent {
 | width | The width of the viewer relative to its container.  Default is 100.  | 1-100  | No |
 | height | The height of the viewer relative to its container.  Default is 100.  | 1-100  | No |
 
+## 🔢 Examples
+Here are some simple examples of the report viewer.
+
+showparameters set to "true"
+<img src="images/toolbar_true.PNG">
+
+showparameters set to "false"
+<img src="images/toolbar_false.PNG">
+
 ## ❗ Limitations
 There are some limitations with the report viewer component that should be noted. 
 
@@ -130,14 +139,6 @@ There are some limitations with the report viewer component that should be noted
  2. Preventing Mixed Content
   The report viewer uses iframes so if your reportserver is HTTP and you are trying to render it in an HTTPS application you will run into issues.
 
-## 🔢 Simple Examples
-Here are some simple examples of the report viewer.
-
-showparameters set to "true"
-<img src="images/toolbar_true.PNG">
-
-showparameters set to "false"
-<img src="images/toolbar_false.PNG">
 
 ## 🐞 Bugs
 If you find this package helpful throw a star my way and please report any bugs you encounter.

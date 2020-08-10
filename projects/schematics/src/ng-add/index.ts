@@ -13,7 +13,7 @@ import * as ts from '@schematics/angular/third_party/github.com/Microsoft/TypeSc
 
 const NGX_SSRS_REPORTVIEWER_MODULE_NAME = 'ReportViewerModule';
 const NGX_SSRS_REPORTVIEWER_PACKAGE_NAME = 'ngx-ssrs-reportviewer';
-const REPORTVIEWER_VERSION = '3.0.0';
+const REPORTVIEWER_VERSION = '3.1.0';
 
 
 function addPackageToPackageJson(options: Schema): Rule {
