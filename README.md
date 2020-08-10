@@ -27,15 +27,19 @@ This library was created to give users the ability to display SQL Server Reporti
 
 Install ngx-ssrs-reportviewer using npm:
 
-    ``` npm install ngx-ssrs-reportviewer --save ```
+```bash
+npm install ngx-ssrs-reportviewer --save 
+```
 
-    or
+or
 
-    ```ng add ngx-ssrs-reportviewer```
+```bash
+ng add ngx-ssrs-reportviewer
+```
 
 ## 👨🏻‍🏫 Usage
 
-1. Add ReportViewerModule and CUSTOM_ELEMENTS_SCHEMA into your AppModule class. An example `app.module.ts` would look like this:
+1. Add ReportViewerModule into your AppModule class. An example `app.module.ts` would look like this:
 
 ```javascript
     
