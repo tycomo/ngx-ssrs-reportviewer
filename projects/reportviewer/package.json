@@ -1,5 +1,5 @@
 {
-  "name": "ngx-ssrs-reportviewer",
+  "name": "custom-ngx-ssrs-reportviewer",
   "version": "3.1.1", 
   "author": "Tyler Como",
   "description": "Angular component for rendering SSRS reports",

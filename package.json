@@ -1,6 +1,6 @@
 {
-  "name": "ngx-ssrs-reportviewer-workspace",
-  "version": "0.0.0",
+  "name": "ngx-ssrs-reportviewer-custom",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -15,16 +15,16 @@
     "schematics:copy": "npm run schematics:build && webpack",
     "build-package": "npm run lib:build:prod && npm run schematics:copy"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
-    "@angular/animations": "13.2.0",
-    "@angular/common": "13.2.0",
-    "@angular/compiler": "13.2.0",
-    "@angular/core": "13.2.0",
-    "@angular/forms": "13.2.0",
-    "@angular/platform-browser": "13.2.0",
-    "@angular/platform-browser-dynamic": "13.2.0",
-    "@angular/router": "~13.2.0",
+    "@angular/animations": "13.1.3",
+    "@angular/common": "13.1.3",
+    "@angular/compiler": "13.1.3",
+    "@angular/core": "13.1.3",
+    "@angular/forms": "13.1.3",
+    "@angular/platform-browser": "13.1.3",
+    "@angular/platform-browser-dynamic": "13.1.3",
+    "@angular/router": "~13.1.3",
     "bootstrap": "5.1.3",
     "rxjs": "~7.5.2",
     "schematics-utilities": "2.0.3",
@@ -32,7 +32,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^13.2.0",
+    "@angular-devkit/build-angular": "^13.1.3",
     "@angular-devkit/build-ng-packagr": "^0.1002.0",
     "@angular/cli": "13.2.0",
     "@angular/compiler-cli": "13.2.0",
@@ -47,7 +47,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~4.0.1",
     "karma-jasmine-html-reporter": "1.7.0",
-    "ng-packagr": "13.2.0",
+    "ng-packagr": "13.1.3",
     "protractor": "~7.0.0",
     "ts-node": "~10.4.0",
     "tslint": "~6.1.0",
