@@ -15,12 +15,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tycomo/ngx-ssrs-reportviewer"
+    "url": "https://github.com/JJU115/ngx-ssrs-reportviewer"
   },
   "schematics": "./schematics/collection.json",
   "peerDependencies": {
-    "@angular/common": "^10.0.6",
-    "@angular/core": "^10.0.6"
+    "@angular/common": "13.1.3",
+    "@angular/core": "13.1.3"
   },
   "dependencies": {
     "tslib": "^2.0.0"
