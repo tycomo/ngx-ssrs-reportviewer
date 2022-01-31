@@ -1,0 +1,6 @@
+{
+	"angularCompilerOptions": {
+		"enableIvy": true,
+		"compilationMode": "partial"
+	  }
+}
