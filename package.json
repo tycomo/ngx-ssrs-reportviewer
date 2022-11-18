@@ -10,10 +10,7 @@
     "lib:build": "ng run reportviewer:build",
     "lib:build:prod": "ng run reportviewer:build:production",
     "lib:test": "ng run reportviewer:test",
-    "lib:lint": "ng run reportviewer:lint",
-    "schematics:build": "tsc -p projects/schematics/tsconfig.json",
-    "schematics:copy": "npm run schematics:build && webpack",
-    "build-package": "npm run lib:build:prod && npm run schematics:copy"
+    "lib:lint": "ng run reportviewer:lint"
   },
   "private": true,
   "dependencies": {
@@ -27,7 +24,6 @@
     "@angular/router": "~10.0.6",
     "bootstrap": "^4.5.2",
     "rxjs": "~6.5.5",
-    "schematics-utilities": "^2.0.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
@@ -51,9 +47,6 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-node-externals": "^2.5.0"
+    "typescript": "~3.9.5"
   }
 }

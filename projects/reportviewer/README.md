@@ -23,17 +23,6 @@
 
 This library was created to give users the ability to display SQL Server Reporting Services (SSRS) reports within Angular applications.  The report viewer simplifies the process of sending commands to your report server through URL requests.  For example, you can pass parameter values and modify the controls that the user has access to inside the report viewer through your own Angular components.  You can read more about using URL access of the report server [here](https://docs.microsoft.com/en-us/sql/reporting-services/url-access-ssrs).
 
-## ⏳ Versions
-
-| Angular Version | ReportViewer Version |
-| :-------------: | :------------------: |
-| 10              | 10                   |
-| 11              | 11                   |
-| 12              | 12                   |
-| 13              | 13                   |
-| 14              | 14                   |
-| 15              | 15                   |
-
 ## 🔧 Installation
 
 Install ngx-ssrs-reportviewer using npm:
@@ -42,11 +31,16 @@ Install ngx-ssrs-reportviewer using npm:
 npm install ngx-ssrs-reportviewer-v2 --save 
 ```
 
-or
+## ⏳ Versions
 
-```bash
-ng add ngx-ssrs-reportviewer-v2
-```
+| Angular Version | ReportViewer Version |             Install Command             |
+| :-------------: | :------------------: | :-------------------------------------- |
+| 10              | 10                   | npm install ngx-ssrs-reportviewer-v2@10 |
+| 11              | 11                   | npm install ngx-ssrs-reportviewer-v2@11 |
+| 12              | 12                   | npm install ngx-ssrs-reportviewer-v2@12 |
+| 13              | 13                   | npm install ngx-ssrs-reportviewer-v2@13 |
+| 14              | 14                   | npm install ngx-ssrs-reportviewer-v2@14 |
+| 15              | 15                   | npm install ngx-ssrs-reportviewer-v2@15 |
 
 ## 👨🏻‍🏫 Usage
 
