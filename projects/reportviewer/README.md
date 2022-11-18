@@ -23,18 +23,29 @@
 
 This library was created to give users the ability to display SQL Server Reporting Services (SSRS) reports within Angular applications.  The report viewer simplifies the process of sending commands to your report server through URL requests.  For example, you can pass parameter values and modify the controls that the user has access to inside the report viewer through your own Angular components.  You can read more about using URL access of the report server [here](https://docs.microsoft.com/en-us/sql/reporting-services/url-access-ssrs).
 
+## ⏳ Versions
+
+| Angular Version | ReportViewer Version |
+| :-------------: | :------------------: |
+| 10              | 10                   |
+| 11              | 11                   |
+| 12              | 12                   |
+| 13              | 13                   |
+| 14              | 14                   |
+| 15              | 15                   |
+
 ## 🔧 Installation
 
 Install ngx-ssrs-reportviewer using npm:
 
 ```bash
-npm install ngx-ssrs-reportviewer --save 
+npm install ngx-ssrs-reportviewer-v2 --save 
 ```
 
 or
 
 ```bash
-ng add ngx-ssrs-reportviewer
+ng add ngx-ssrs-reportviewer-v2
 ```
 
 ## 👨🏻‍🏫 Usage
@@ -44,7 +55,7 @@ ng add ngx-ssrs-reportviewer
 ```javascript
     
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ReportViewerModule } from 'ngx-ssrs-reportviewer';
 
@@ -57,8 +68,7 @@ import { ReportViewerModule } from 'ngx-ssrs-reportviewer';
     ReportViewerModule
   ],
   providers: [],
-  bootstrap: [AppComponent],,
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 

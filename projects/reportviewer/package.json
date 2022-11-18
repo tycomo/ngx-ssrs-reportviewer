@@ -1,9 +1,9 @@
 {
-  "name": "ngx-ssrs-reportviewer",
-  "version": "3.1.1", 
+  "name": "ngx-ssrs-reportviewer-v2",
+  "version": "10.0.0", 
   "author": "Tyler Como",
   "description": "Angular component for rendering SSRS reports",
-  "homepage": "https://github.com/tycomo/ngx-ssrs-reportviewer",
+  "homepage": "https://github.com/danisss9/ngx-ssrs-reportviewer-v2",
   "license": "MIT",
   "keywords": [
     "Angular",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tycomo/ngx-ssrs-reportviewer"
+    "url": "https://github.com/danisss9/ngx-ssrs-reportviewer-v2"
   },
   "schematics": "./schematics/collection.json",
   "peerDependencies": {
