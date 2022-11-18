@@ -6,32 +6,30 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint",
     "lib:build": "ng run reportviewer:build",
     "lib:build:prod": "ng run reportviewer:build:production",
-    "lib:test": "ng run reportviewer:test",
-    "lib:lint": "ng run reportviewer:lint"
+    "lib:test": "ng run reportviewer:test"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~12.2.16",
-    "@angular/common": "~12.2.16",
-    "@angular/compiler": "~12.2.16",
-    "@angular/core": "~12.2.16",
-    "@angular/forms": "~12.2.16",
-    "@angular/platform-browser": "~12.2.16",
-    "@angular/platform-browser-dynamic": "~12.2.16",
-    "@angular/router": "~12.2.16",
+    "@angular/animations": "~13.3.11",
+    "@angular/common": "~13.3.11",
+    "@angular/compiler": "~13.3.11",
+    "@angular/core": "~13.3.11",
+    "@angular/forms": "~13.3.11",
+    "@angular/platform-browser": "~13.3.11",
+    "@angular/platform-browser-dynamic": "~13.3.11",
+    "@angular/router": "~13.3.11",
     "bootstrap": "^4.5.2",
     "rxjs": "~6.5.5",
     "tslib": "^2.4.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~12.2.18",
-    "@angular-devkit/core": "^12.2.18",
-    "@angular/cli": "~12.2.18",
-    "@angular/compiler-cli": "~12.2.16",
+    "@angular-devkit/build-angular": "~13.3.10",
+    "@angular-devkit/core": "^13.3.10",
+    "@angular/cli": "~13.3.10",
+    "@angular/compiler-cli": "~13.3.11",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -43,10 +41,10 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^12.2.7",
+    "ng-packagr": "^13.3.1",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.3.5"
+    "typescript": "~4.6.4"
   }
 }
