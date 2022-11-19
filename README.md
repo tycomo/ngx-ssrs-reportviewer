@@ -5,18 +5,18 @@
 <h1 align="center">Angular SQL Server Report Viewer (ngx-ssrs-reportviewer)</h1>
 
 <p align="center">
-<a href="https://www.npmjs.com/package/ngx-ssrs-reportviewer"><img src="https://img.shields.io/npm/v/ngx-ssrs-reportviewer.svg?colorB=cb3837" alt="npm"></a>
-<a href="https://www.npmjs.com/package/ngx-ssrs-reportviewer"><img src="https://img.shields.io/npm/dt/ngx-ssrs-reportviewer?color=blue" alt="Downloads"></a>
-<a href="https://github.com/tycomo/ngx-ssrs-reportviewer/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
+<a href="https://www.npmjs.com/package/ngx-ssrs-reportviewer-v2"><img src="https://img.shields.io/npm/v/ngx-ssrs-reportviewer.svg?colorB=cb3837" alt="npm"></a>
+<a href="https://www.npmjs.com/package/ngx-ssrs-reportviewer-v2"><img src="https://img.shields.io/npm/dt/ngx-ssrs-reportviewer?color=blue" alt="Downloads"></a>
+<a href="https://github.com/danisss9/ngx-ssrs-reportviewer-v2/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
 </p>
 
 
 <p align="center">
-  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-installation">Installation</a> ·
-  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-usage">Usage</a> ·
-  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-attributes">Attributes</a> ·
-  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-examples">Examples</a> ·
-  <a href="https://github.com/tycomo/ngx-ssrs-reportviewer#-limitations">Limitations</a>
+  <a href="#-installation">Installation</a> ·
+  <a href="#-usage">Usage</a> ·
+  <a href="#-attributes">Attributes</a> ·
+  <a href="#-examples">Examples</a> ·
+  <a href="#-limitations">Limitations</a>
 </p>
 
 ## ℹ️️ Description
@@ -51,7 +51,7 @@ npm install ngx-ssrs-reportviewer-v2 --save
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { ReportViewerModule } from 'ngx-ssrs-reportviewer';
+import { ReportViewerModule } from 'ngx-ssrs-reportviewer-v2';
 
 @NgModule({
   declarations: [
