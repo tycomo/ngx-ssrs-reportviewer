@@ -143,6 +143,9 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngx-ssrs-reportviewer-workspace"
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
 }
