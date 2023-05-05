@@ -1,6 +1,6 @@
 {
   "name": "ngx-ssrs-reportviewer-v2",
-  "version": "15.0.1", 
+  "version": "16.0.0",
   "author": "Tyler Como",
   "description": "Angular component for rendering SSRS reports",
   "homepage": "https://github.com/danisss9/ngx-ssrs-reportviewer-v2",
@@ -18,8 +18,8 @@
     "url": "https://github.com/danisss9/ngx-ssrs-reportviewer-v2"
   },
   "peerDependencies": {
-    "@angular/common": "^15.0.0",
-    "@angular/core": "^15.0.0"
+    "@angular/common": "^16.0.0",
+    "@angular/core": "^16.0.0"
   },
   "dependencies": {
     "tslib": "^2.4.0"
