@@ -41,6 +41,7 @@ npm install ngx-ssrs-reportviewer-v2 --save
 | 13              | 13                   | npm install ngx-ssrs-reportviewer-v2@13 |
 | 14              | 14                   | npm install ngx-ssrs-reportviewer-v2@14 |
 | 15              | 15                   | npm install ngx-ssrs-reportviewer-v2@15 |
+| 16              | 16                   | npm install ngx-ssrs-reportviewer-v2@16 |
 
 ## 👨🏻‍🏫 Usage
 
